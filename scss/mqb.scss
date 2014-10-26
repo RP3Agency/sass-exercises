@@ -1,0 +1,22 @@
+// Set the background color for our main-content column to be magenta by default
+
+
+// Use media query bubbling to set the background color to yellow
+// at a breakpoint of 480px
+
+
+// Use media query bubbling to set the background color to blue
+// at a breakpoint of 800px
+
+
+// Use media query bubbling to set the background color to orange
+// on high-resolution (retina) displays
+// 
+// The media query for that is: 
+// @media only all and (min--moz-device-pixel-ratio: 1.5),
+// 	only all and (-o-min-device-pixel-ratio: 3/2),
+// 	only all and (-webkit-min-device-pixel-ratio: 1.5),
+// 	only all and (min-device-pixel-ratio: 1.5),
+// 	only all and (min-resolution: 144dpi),
+// 	only all and (min-resolution: 1.5dppx) {}
+

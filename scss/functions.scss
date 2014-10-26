@@ -1,0 +1,48 @@
+// Set the number of columns, margin width, and context
+$columns:		null;
+$margin:		null;
+$context:		null;
+
+
+
+// Create functions to determine the column width and margin based
+// on the number of columns we want to span, and the variables
+// defined above
+
+@function margin() {
+}
+
+@function column-width($cols-to-span) {
+}
+
+
+// Set the .main-content and .sidebar columns to various widths
+body.secondary .two-column .main-content {
+}
+
+body.secondary .two-column .sidebar {
+}
+
+
+// Our formulae
+// margin (%) = $margin / $context
+// column-width (px) = ( $context - ( $margin * ( $columns - 1 ) ) ) / $columns
+// column-width (%) = ( percentage( $column-width / $context ) * $cols-to-span ) + ( margin() * ( $cols-to-span - 1 ) )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.secondary .two-column .sidebar {
+	border-left: none;
+}

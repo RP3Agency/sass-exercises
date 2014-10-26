@@ -1,0 +1,17 @@
+// write a mixin called "mq" that uses keywords to determine which media query to implement
+// "medium" = 480px, "large" = 800px
+
+
+
+
+
+
+// Modify that mixin to test if the "hidpi" or "retina" keyword is given,
+// and serve up an appropriate media query for that.
+
+
+
+
+
+// Now assign those keywords to a list, and have Sass return an error if
+// an invalid keyword is passed

@@ -1,0 +1,15 @@
+@import "functions";
+
+// Create a mixin using the columns functions from the previous
+// exercise to create our math-based grid system
+@mixin grid($columns) {
+}
+
+
+
+// Use that mixin to define the width of our columns
+body.secondary .two-column .main-content {
+}
+
+body.secondary .two-column .sidebar {
+}

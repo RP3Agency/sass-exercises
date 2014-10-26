@@ -1,0 +1,57 @@
+@import "genericons";
+
+$social-media: (
+	("facebook",		"\f203"),
+	("twitter",			"\f202"),
+	("googleplus",		"\f206"),
+	("linkedin",		"\f208")
+);
+
+
+
+ul.social {
+	// list-style: none;
+	// margin: 2em 0;
+
+	li {
+		// display: block;
+		// float: left;
+		// height: 36px;
+		// margin: 0 5px 0;
+		// padding: 0;
+		// width: 36px;
+
+		// &:before {
+		// 	content: none;
+		// }
+
+		a {
+			// display: block;
+			// height: 100%;
+			// overflow: hidden;
+			// position: relative;
+			// text-decoration: none;
+			// text-indent: 200%;
+			// white-space: nowrap;
+			// width: 100%;
+
+			&:after {
+				// color: #7a0000;
+				// display: block;
+				// font-family: Genericons;
+				// font-size: 36px;
+				// left: 0;
+				// line-height: 1;
+				// position: absolute;
+				// text-indent: 0;
+				// top: 0;
+			}
+		}
+
+
+		// Iterate through the list, and apply the UTF code to the appropriate pseudo-element
+
+
+		// Go back to our defined list, and add Instagram (UTF \f215)
+	}
+}

@@ -1,0 +1,105 @@
+.sidebar {
+}
+
+
+// Make this a descendant of .sidebar
+aside {
+}
+
+
+// Use the "&" selector to make this a class of the aside above
+.news {
+	ol, ul {
+	    margin: 0;
+	    padding: 0;
+
+	    li {
+	        margin: 0;
+	        padding: 0;
+
+	        &:before {
+	            display: none;
+	        }
+	    }
+	}
+}
+
+
+// Make this a descendant of aside.news
+h1 {
+    display: block;
+    transform: skew(-20deg, 0);
+
+    > * {
+        display: block;
+        transform: skew(20deg, 0);
+    }
+
+    background-color: #262626;
+    margin: 0 4px 20px;
+    padding: 0.1em 8px;
+
+    span {
+        color: #FFFFFF;
+
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+
+// Make this a descendant of aside.news
+ul {
+    clear: both;
+
+    li {
+
+        border-bottom: 1px solid #e8e7df;
+
+        margin-bottom: 16px;
+	    padding: 0 0 1em 25px;
+        padding-bottom: 16px;
+
+	    position: relative;
+
+        &.last {
+            border-bottom: none;
+        }
+
+		&.alert:before {
+	        content: '';
+	        display: block;
+	        height: 17px;
+	        overflow: hidden;
+	        width: 17px;
+			margin-left: 0;
+
+	        background: no-repeat center bottom;
+
+	        left: 0;
+	        margin-top: 0 - floor(17px / 2);
+	        position: absolute;
+	        top: 50%;
+	    }
+
+		span {
+			display: block;
+			&.date {
+                color: #6e6b5e;
+                display: block;
+                font-style: italic;
+            }
+
+			&.link:after {
+			    content: "\00A0»";
+			    white-space: nowrap;
+			}
+
+			&.category {
+	            color: #6e6b5e;
+	            text-transform: uppercase;
+	            font-size: 10px;
+	        }
+		}
+    }
+}
